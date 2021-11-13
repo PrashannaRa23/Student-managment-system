@@ -6,15 +6,19 @@ import { AppComponent } from './app.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { StudentsService } from './students.service';
+import { HttpClientModule } from '@angular/common/http';
+import { SpacexComponent } from './spacex/spacex.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentDetailsComponent,
-    StudentListComponent
+    StudentListComponent,
+    SpacexComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [StudentsService],
